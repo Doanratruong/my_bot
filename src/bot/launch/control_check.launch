@@ -11,7 +11,7 @@
   <param name="robot_description" command="/opt/ros/noetic/bin/xacro $(arg model)"/>
 
   <!-- Start the robot hardware interface node -->
-  <node name="mobile_robot_hardware_interface" pkg="mobile_robot_navigation" type="robot_hardware_interface_node" output="screen">
+  <node name="mobile_robot_hardware_interface" pkg="bot" type="mobile_robot_hardware_interface" output="screen">
     <remap from="/mobile_robot/mobile_base_controller/cmd_vel" to="/cmd_vel"/>
   </node>
 
@@ -24,11 +24,11 @@
   <!-- Start the controller spawner -->
   <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen"
         args="
-          /mobile_robot/joints_update
-          /mobile_robot/mobile_base_controller"/>
+          /joint_state_controller
+          /mobile_base_controller"/>
   
   <!-- Start the motor control node with USB connection -->
-  <node name="motor_control" pkg="motor_control" type="motor_control.py" output="screen">
+  <node name="motor_control" pkg="bot" type="motor_control.py" output="screen">
     <param name="port" type="string" value="/dev/ttyUSB0"/>
     <param name="baud" type="int" value="57600"/>
   </node>
