@@ -1,0 +1,2 @@
+Autonomous_Mobile_Robot/mobile_robot_autonomous_navigation:motor_control
+-DCATKIN_DEVEL_PREFIX=/home/rasp/bot/devel -DCMAKE_INSTALL_PREFIX=/home/rasp/bot/install -G Unix Makefiles
