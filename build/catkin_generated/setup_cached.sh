@@ -7,6 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export LD_LIBRARY_PATH='/opt/ros/noetic/lib:/opt/ros/noetic/lib/arm-linux-gnueabihf'
-export PKG_CONFIG_PATH='/opt/ros/noetic/lib/pkgconfig:/opt/ros/noetic/lib/arm-linux-gnueabihf/pkgconfig'
-export PWD='/home/rasp/My_bot/build'
+export PWD='/home/rasp/catkin_ws/build'

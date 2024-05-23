@@ -1,8 +1,0 @@
-prefix=/home/rasp/My_bot/devel
-
-Name: bot
-Description: Description of bot
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: roscpp hardware_interface controller_manager serial std_msgs geometry_msgs

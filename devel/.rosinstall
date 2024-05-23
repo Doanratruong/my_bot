@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/rasp/My_bot/devel/setup.sh
+    local-name: /home/rasp/catkin_ws/devel/setup.sh

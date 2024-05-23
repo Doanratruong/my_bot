@@ -1,8 +1,8 @@
 # CMake generated Testfile for 
-# Source directory: /home/rasp/My_bot/src
-# Build directory: /home/rasp/My_bot/build
+# Source directory: /home/rasp/catkin_ws/src
+# Build directory: /home/rasp/catkin_ws/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
-subdirs("bot")
+subdirs("jetson_nano_bot/localization_data_pub")
