@@ -1,2 +1,2 @@
-jetson_nano_bot/launch_jetson_nano_bot:jetson_nano_bot/localization_data_pub
--DCATKIN_DEVEL_PREFIX=/home/rasp/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/rasp/catkin_ws/install -G Unix Makefiles
+jetson_nano_bot/localization_data_pub
+-DCATKIN_DEVEL_PREFIX=/home/rasp/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/rasp/catkin_ws/install -DCATKIN_WHITELIST_PACKAGES=localization_data_pub -G Unix Makefiles
