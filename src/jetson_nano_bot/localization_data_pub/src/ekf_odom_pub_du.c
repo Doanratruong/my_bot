@@ -84,6 +84,7 @@ int main(int argc, char** argv){
     geometry_msgs::Quaternion odom_quat = tf::createQuaternionMsgFromYaw(theta);
 
     if(publish_tf) {
+      current_time = ros::Time::now(); // Cập nhật thời gian hiện tại
       geometry_msgs::TransformStamped t;
       t.header.frame_id = "/odom";
       t.child_frame_id = "/base_link";
@@ -91,7 +92,7 @@ int main(int argc, char** argv){
       t.transform.translation.y = y_pos;
       t.transform.translation.z = 0.0;
       t.transform.rotation = odom_quat;
-      t.header.stamp = current_time;
+      t.header.stamp = current_time; // Sử dụng thời gian mới cập nhật
       broadcaster.sendTransform(t);
     }
 
